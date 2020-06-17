@@ -20,7 +20,9 @@ For version 1.2 the generated types are prefixed with "FPA120", for version 1.2.
 Using the classes `FatturaPA120Marshaller` and `FatturaPA121Marshaller` you can read and write fatturaPA invoices.
 Class `FatturaPA120Marshaller` handles version 1.2 and class `FatturaPA121Marshaller` handles version 1.2.1.
 
-Reading an existing fattura PA 1.2 from an existing File is as easy as this:
+### Reading
+
+Reading an existing fatturaPA 1.2 from an existing File is as easy as this:
 
 ```java
 FPA120FatturaElettronicaType aInvoice = new FatturaPA120Marshaller ().read (new File ("invoice.xml"));
@@ -30,6 +32,9 @@ if (aInvoice != null) {
   // Error handling
 }
 ```
+There are several overloads of `read` to read from different kind of sources.
+
+### Writing
 
 Writing an existing `FPA120FatturaElettronicaType` is also very simple:
 
@@ -41,8 +46,9 @@ if (new FatturaPA120Marshaller ().write (aInvoice, new File ("new-invoice.xml"))
   // Error handling
 }
 ```
+There are several overloads of `write` to write from different kind of targets and `getAs...` methods to convert the invoice to different formats.
 
-Note: for version 1.2.1 replace the type name to use `121` instead of `120`. 
+By default a namespace context is present that uses the "p" prefix for the main element. If you want to change that, see the method `setNamespaceContext` of the Marshaller classes. 
 
 # Building from source
 
@@ -79,7 +85,7 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
-* v1.0.0 - work in progress
+* v1.0.0 - 2020-06-17
     * Initial version
 
 ---

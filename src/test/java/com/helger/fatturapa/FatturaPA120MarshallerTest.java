@@ -26,6 +26,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.helger.commons.io.file.FileSystemIterator;
+import com.helger.commons.mock.CommonsTestHelper;
+import com.helger.fatturapa.v120.FPA120FatturaElettronicaType;
 
 /**
  * Test class for class {@link FatturaPA120Marshaller}.
@@ -43,7 +45,16 @@ public final class FatturaPA120MarshallerTest
     final FatturaPA120Marshaller aMarshaller = new FatturaPA120Marshaller ();
     for (final File aFile : new FileSystemIterator ("src/test/resources/examples/120/good"))
       if (aFile.isFile ())
-        assertNotNull (aFile.getAbsolutePath (), aMarshaller.read (aFile));
+      {
+        final FPA120FatturaElettronicaType o = aMarshaller.read (aFile);
+        assertNotNull (aFile.getAbsolutePath (), o);
+        // Write
+        final byte [] b = aMarshaller.getAsBytes (o);
+        assertNotNull (b);
+        // Read again
+        final FPA120FatturaElettronicaType o2 = aMarshaller.read (b);
+        CommonsTestHelper.testEqualsImplementationWithEqualContentObject (o, o2);
+      }
   }
 
   @Test
