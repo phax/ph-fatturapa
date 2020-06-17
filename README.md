@@ -31,6 +31,19 @@ if (aInvoice != null) {
 }
 ```
 
+Writing an existing `FPA120FatturaElettronicaType` is also very simple:
+
+```java
+FPA120FatturaElettronicaType aInvoice = ....;
+if (new FatturaPA120Marshaller ().write (aInvoice, new File ("new-invoice.xml")).isSuccess ()) { 
+  // Writing was successful
+} else {
+  // Error handling
+}
+```
+
+Note: for version 1.2.1 replace the type name to use `121` instead of `120`. 
+
 # Building from source
 
 To build from source you need Apache Maven and Java 1.8 or later.
