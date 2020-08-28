@@ -85,6 +85,8 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
+* v1.0.2 - 2020-08-28
+    * Using Java 8 date and time classes for JAXB created classes
 * v1.0.1 - 2020-06-30
     * Minor API extension
 * v1.0.0 - 2020-06-17
