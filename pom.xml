@@ -25,7 +25,7 @@
     <version>1.11.3</version>
   </parent>
   <artifactId>ph-fatturapa</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1-SNAPSHOT</version>
   <name>ph-fatturapa</name>
   <description>Library for reading and writing fatturaPA documents</description>
   <url>https://github.com/phax/ph-fatturapa</url>
@@ -43,7 +43,7 @@
     <connection>scm:git:git@github.com:phax/ph-fatturapa.git</connection>
     <developerConnection>scm:git:git@github.com:phax/ph-fatturapa.git</developerConnection>
     <url>http://github.com/phax/ph-fatturapa</url>
-    <tag>ph-fatturapa-1.1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <organization>
