@@ -85,6 +85,8 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
+* v1.2.0 - 2021-05-02
+    * Updated to ph-commons 10.1
 * v1.1.0 - 2021-03-21
     * Updated to ph-commons 10
 * v1.0.3 - 2020-09-17
