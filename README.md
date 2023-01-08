@@ -88,6 +88,10 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
+* v2.0.0 - 2023-01-08
+    * Using Java 11 as the baseline
+    * Updated to ph-commons 11
+    * Using JAXB 4.0 as the baseline
 * v1.2.0 - 2021-05-02
     * Updated to ph-commons 10.1
 * v1.1.0 - 2021-03-21
