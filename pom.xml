@@ -157,6 +157,7 @@
         <artifactId>${jaxb-plugin.artifact}</artifactId>
         <version>${jaxb-plugin.version}</version>
         <executions>
+          <!-- MUST be 2 different executions because Namespace URI and root element are identical!! -->
           <execution>
             <id>120</id>
             <goals>
