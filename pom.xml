@@ -188,6 +188,21 @@
               <generateDirectory>${project.build.directory}/generated-sources/fatturapa121</generateDirectory>
             </configuration>
           </execution>
+          <execution>
+            <id>122</id>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <schemaIncludes>
+                <schemaInclude>Schema_del_file_xml_FatturaPA_v1.2.2.xsd</schemaInclude>
+              </schemaIncludes>
+              <bindingIncludes>
+                <bindingInclude>bindings122.xjb</bindingInclude>
+              </bindingIncludes>
+              <generateDirectory>${project.build.directory}/generated-sources/fatturapa122</generateDirectory>
+            </configuration>
+          </execution>
         </executions>
         <configuration>
           <bindingDirectory>${basedir}/src/main/jaxb</bindingDirectory>
@@ -242,6 +257,7 @@
               <target>
                 <delete dir="${basedir}/target/generated-sources/fatturapa120/com/helger/xsds/" />
                 <delete dir="${basedir}/target/generated-sources/fatturapa121/com/helger/xsds/" />
+                <delete dir="${basedir}/target/generated-sources/fatturapa122/com/helger/xsds/" />
               </target>
             </configuration>
           </execution>

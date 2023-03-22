@@ -36,7 +36,8 @@ public final class CFatturaPA
 {
   public static final String DEFAULT_PREFIX_FPA = "p";
   public static final String NAMESPACE_URI_FATTURA_PA_120 = "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2";
-  public static final String NAMESPACE_URI_FATTURA_PA_121 = "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2";
+  public static final String NAMESPACE_URI_FATTURA_PA_121 = NAMESPACE_URI_FATTURA_PA_120;
+  public static final String NAMESPACE_URI_FATTURA_PA_122 = NAMESPACE_URI_FATTURA_PA_120;
 
   @Nonnull
   private static ClassLoader _getCL ()
@@ -87,8 +88,24 @@ public final class CFatturaPA
     return ret;
   }
 
+  // Note: requires XMLDsig
+  @Nonnull
+  public static ClassPathResource getXSDFatturaPA122 ()
+  {
+    return new ClassPathResource ("/schemas/fatturapa/Schema_del_file_xml_FatturaPA_v1.2.2.xsd", _getCL ());
+  }
+
+  @Nonnull
+  @ReturnsMutableCopy
+  public static ICommonsList <ClassPathResource> getAllXSDFatturaPA122 ()
+  {
+    final ICommonsList <ClassPathResource> ret = getAllXSDIncludes ();
+    ret.add (getXSDFatturaPA122 ());
+    return ret;
+  }
+
   @PresentForCodeCoverage
-  private static final CFatturaPA s_aInstance = new CFatturaPA ();
+  private static final CFatturaPA INSTANCE = new CFatturaPA ();
 
   private CFatturaPA ()
   {}

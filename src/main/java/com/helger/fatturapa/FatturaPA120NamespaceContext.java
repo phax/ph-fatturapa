@@ -32,7 +32,7 @@ public class FatturaPA120NamespaceContext extends MapBasedNamespaceContext
 {
   private static final class SingletonHolder
   {
-    static final FatturaPA120NamespaceContext s_aInstance = new FatturaPA120NamespaceContext ();
+    static final FatturaPA120NamespaceContext INSTANCE = new FatturaPA120NamespaceContext ();
   }
 
   protected FatturaPA120NamespaceContext ()
@@ -44,6 +44,6 @@ public class FatturaPA120NamespaceContext extends MapBasedNamespaceContext
   @Nonnull
   public static FatturaPA120NamespaceContext getInstance ()
   {
-    return SingletonHolder.s_aInstance;
+    return SingletonHolder.INSTANCE;
   }
 }

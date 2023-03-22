@@ -28,21 +28,21 @@ import com.helger.xsds.xmldsig.CXMLDSig;
  * @author Philip Helger
  */
 @Singleton
-public class FatturaPA121NamespaceContext extends MapBasedNamespaceContext
+public class FatturaPA122NamespaceContext extends MapBasedNamespaceContext
 {
   private static final class SingletonHolder
   {
-    static final FatturaPA121NamespaceContext INSTANCE = new FatturaPA121NamespaceContext ();
+    static final FatturaPA122NamespaceContext INSTANCE = new FatturaPA122NamespaceContext ();
   }
 
-  protected FatturaPA121NamespaceContext ()
+  protected FatturaPA122NamespaceContext ()
   {
     addMapping (CXMLDSig.DEFAULT_PREFIX, CXMLDSig.NAMESPACE_URI);
-    addMapping (CFatturaPA.DEFAULT_PREFIX_FPA, CFatturaPA.NAMESPACE_URI_FATTURA_PA_121);
+    addMapping (CFatturaPA.DEFAULT_PREFIX_FPA, CFatturaPA.NAMESPACE_URI_FATTURA_PA_122);
   }
 
   @Nonnull
-  public static FatturaPA121NamespaceContext getInstance ()
+  public static FatturaPA122NamespaceContext getInstance ()
   {
     return SingletonHolder.INSTANCE;
   }

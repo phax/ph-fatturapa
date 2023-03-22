@@ -7,11 +7,12 @@ Java library to easily read and write XML Schema compliant fatturaPA invoices.
 
 Supported versions are:
 * v1.2 (valid until 2020-12-31) 
-* v1.2.1 (valid from 2020-10-01)
+* v1.2.1 (valid from 2020-10-01 to 2022-09-30)
+* v1.2.2 (valid from 2022-10-01)
 
 It is licensed under Apache 2.0 license.
 
-It requires at least Java 8 to be used.
+It requires at least Java 11 to be used.
 
 # Usage guide
 
@@ -88,6 +89,8 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
+* v2.0.1 - 2023-03-22
+    * Added support for fatturaPA 1.2.2
 * v2.0.0 - 2023-01-08
     * Using Java 11 as the baseline
     * Updated to ph-commons 11
