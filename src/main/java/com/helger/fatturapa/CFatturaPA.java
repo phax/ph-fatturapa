@@ -60,7 +60,8 @@ public final class CFatturaPA
   @Nonnull
   public static ClassPathResource getXSDFatturaPA120 ()
   {
-    return new ClassPathResource ("/schemas/fatturapa/Schema_del_file_xml_FatturaPA_versione_1.2.xsd", _getCL ());
+    return new ClassPathResource ("/external/schemas/fatturapa/Schema_del_file_xml_FatturaPA_versione_1.2.xsd",
+                                  _getCL ());
   }
 
   @Nonnull
@@ -76,7 +77,8 @@ public final class CFatturaPA
   @Nonnull
   public static ClassPathResource getXSDFatturaPA121 ()
   {
-    return new ClassPathResource ("/schemas/fatturapa/Schema_del_file_xml_FatturaPA_versione_1.2.1.xsd", _getCL ());
+    return new ClassPathResource ("/external/schemas/fatturapa/Schema_del_file_xml_FatturaPA_versione_1.2.1.xsd",
+                                  _getCL ());
   }
 
   @Nonnull
@@ -92,7 +94,7 @@ public final class CFatturaPA
   @Nonnull
   public static ClassPathResource getXSDFatturaPA122 ()
   {
-    return new ClassPathResource ("/schemas/fatturapa/Schema_del_file_xml_FatturaPA_v1.2.2.xsd", _getCL ());
+    return new ClassPathResource ("/external/schemas/fatturapa/Schema_del_file_xml_FatturaPA_v1.2.2.xsd", _getCL ());
   }
 
   @Nonnull

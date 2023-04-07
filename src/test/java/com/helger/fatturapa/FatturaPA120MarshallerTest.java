@@ -43,7 +43,7 @@ public final class FatturaPA120MarshallerTest
   {
     LOGGER.info ("Reading good fatturaPA files");
     final FatturaPA120Marshaller aMarshaller = new FatturaPA120Marshaller ();
-    for (final File aFile : new FileSystemIterator ("src/test/resources/examples/120/good"))
+    for (final File aFile : new FileSystemIterator ("src/test/resources/external/examples/120/good"))
       if (aFile.isFile ())
       {
         final FPA120FatturaElettronicaType o = aMarshaller.read (aFile);
@@ -62,7 +62,7 @@ public final class FatturaPA120MarshallerTest
   {
     LOGGER.info ("Reading bad fatturaPA files");
     final FatturaPA120Marshaller aMarshaller = new FatturaPA120Marshaller ();
-    for (final File aFile : new FileSystemIterator ("src/test/resources/examples/120/bad"))
+    for (final File aFile : new FileSystemIterator ("src/test/resources/external/examples/120/bad"))
       if (aFile.isFile ())
         assertNull (aFile.getAbsolutePath (), aMarshaller.read (aFile));
   }

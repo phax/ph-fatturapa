@@ -207,7 +207,7 @@
         <configuration>
           <bindingDirectory>${basedir}/src/main/jaxb</bindingDirectory>
           <catalog>${basedir}/src/main/jaxb/catalog.txt</catalog>
-          <schemaDirectory>${basedir}/src/main/resources/schemas/fatturapa</schemaDirectory>
+          <schemaDirectory>${basedir}/src/main/resources/external/schemas/fatturapa</schemaDirectory>
           <extension>true</extension>
           <strict>false</strict>
           <args>

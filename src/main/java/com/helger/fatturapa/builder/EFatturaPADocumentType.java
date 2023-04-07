@@ -29,6 +29,7 @@ import com.helger.commons.string.StringHelper;
 import com.helger.fatturapa.CFatturaPA;
 import com.helger.fatturapa.v120.FPA120FatturaElettronicaType;
 import com.helger.fatturapa.v121.FPA121FatturaElettronicaType;
+import com.helger.fatturapa.v122.FPA122FatturaElettronicaType;
 import com.helger.jaxb.builder.IJAXBDocumentType;
 import com.helger.jaxb.builder.JAXBDocumentType;
 
@@ -41,7 +42,8 @@ import com.helger.jaxb.builder.JAXBDocumentType;
 public enum EFatturaPADocumentType implements IJAXBDocumentType
 {
   FATTURAPA_120 (FPA120FatturaElettronicaType.class, CFatturaPA.getAllXSDFatturaPA120 ()),
-  FATTURAPA_121 (FPA121FatturaElettronicaType.class, CFatturaPA.getAllXSDFatturaPA121 ());
+  FATTURAPA_121 (FPA121FatturaElettronicaType.class, CFatturaPA.getAllXSDFatturaPA121 ()),
+  FATTURAPA_122 (FPA122FatturaElettronicaType.class, CFatturaPA.getAllXSDFatturaPA122 ());
 
   private final JAXBDocumentType m_aDocType;
 
