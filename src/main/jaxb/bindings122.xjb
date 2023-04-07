@@ -28,7 +28,7 @@
     <xjc:javaType name="com.helger.commons.datetime.XMLOffsetDate"     xmlType="xsd:date"     adapter="com.helger.jaxb.adapter.AdapterXMLOffsetDate" />
     <xjc:javaType name="com.helger.commons.datetime.XMLOffsetTime"     xmlType="xsd:time"     adapter="com.helger.jaxb.adapter.AdapterXMLOffsetTime" />
   </globalBindings>
-  <bindings schemaLocation="../resources/schemas/fatturapa/Schema_del_file_xml_FatturaPA_v1.2.2.xsd">
+  <bindings schemaLocation="../resources/external/schemas/fatturapa/Schema_del_file_xml_FatturaPA_v1.2.2.xsd">
     <schemaBindings>
       <package name="com.helger.fatturapa.v122" />
       <nameXmlTransform>
