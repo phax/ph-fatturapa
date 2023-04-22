@@ -44,7 +44,7 @@ public class FatturaPA122Marshaller extends GenericJAXBMarshaller <FPA122Fattura
   {
     super (FPA122FatturaElettronicaType.class,
            bValidationEnabled ? XSDS : null,
-           o -> new ObjectFactory ().createFatturaElettronica (o));
+           new ObjectFactory ()::createFatturaElettronica);
 
     setNamespaceContext (FatturaPA122NamespaceContext.getInstance ());
   }
