@@ -91,7 +91,7 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 * v2.0.2 - 2023-04-07
     * Added v1.2.2 to `EFatturaPADocumentType`
-    * Moved XML Schemas and test files to a different directory
+    * Moved XML Schemas and test files to a folder `external/...`
 * v2.0.1 - 2023-03-22
     * Added support for fatturaPA 1.2.2
 * v2.0.0 - 2023-01-08
