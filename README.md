@@ -89,6 +89,8 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
+* v2.0.3 - work in progress
+    * Deprecated class `EFatturaPADocumentType`
 * v2.0.2 - 2023-04-07
     * Added v1.2.2 to `EFatturaPADocumentType`
     * Moved XML Schemas and test files to a folder `external/...`

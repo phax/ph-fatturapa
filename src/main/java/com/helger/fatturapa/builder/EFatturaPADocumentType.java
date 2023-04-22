@@ -39,6 +39,7 @@ import com.helger.jaxb.builder.JAXBDocumentType;
  * @author Philip Helger
  * @since 1.0.1
  */
+@Deprecated (forRemoval = true, since = "2.0.3")
 public enum EFatturaPADocumentType implements IJAXBDocumentType
 {
   FATTURAPA_120 (FPA120FatturaElettronicaType.class, CFatturaPA.getAllXSDFatturaPA120 ()),
