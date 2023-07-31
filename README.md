@@ -1,7 +1,8 @@
 # ph-fatturapa
 
-[![javadoc](https://javadoc.io/badge2/com.helger/ph-fatturapa/javadoc.svg)](https://javadoc.io/doc/com.helger/ph-fatturapa)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fatturapa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.helger/ph-fatturapa) 
+[![javadoc](https://javadoc.io/badge2/com.helger/ph-fatturapa/javadoc.svg)](https://javadoc.io/doc/com.helger/ph-fatturapa)
+[![CodeCov](https://codecov.io/gh/phax/ph-fatturapa/branch/master/graph/badge.svg)](https://codecov.io/gh/phax/ph-fatturapa)
 
 Java library to easily read and write XML Schema compliant fatturaPA invoices.
 
