@@ -40,8 +40,8 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:phax/ph-fatturapa.git</connection>
-    <developerConnection>scm:git:git@github.com:phax/ph-fatturapa.git</developerConnection>
+    <connection>scm:git:https://@github.com/phax/ph-fatturapa.git</connection>
+    <developerConnection>scm:git:https://@github.com/phax/ph-fatturapa.git</developerConnection>
     <url>http://github.com/phax/ph-fatturapa</url>
     <tag>HEAD</tag>
   </scm>
@@ -64,6 +64,7 @@
     <jaxb-plugin.group>com.helger.maven</jaxb-plugin.group>
     <jaxb-plugin.artifact>jaxb40-maven-plugin</jaxb-plugin.artifact>
     <jaxb-plugin.version>0.16.1</jaxb-plugin.version>
+    <ph-jaxb-plugin.version>4.0.3</ph-jaxb-plugin.version>
   </properties>
 
   <dependencyManagement>
@@ -224,7 +225,7 @@
           <dependency>
             <groupId>com.helger</groupId>
             <artifactId>ph-jaxb-plugin</artifactId>
-            <version>4.0.2</version>
+            <version>${ph-jaxb-plugin.version}</version>
           </dependency>
         </dependencies>
       </plugin>
