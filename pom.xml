@@ -61,9 +61,9 @@
   </developers>
 
   <properties>
-    <jaxb-plugin.group>com.helger.maven</jaxb-plugin.group>
-    <jaxb-plugin.artifact>jaxb40-maven-plugin</jaxb-plugin.artifact>
-    <jaxb-plugin.version>0.16.1</jaxb-plugin.version>
+    <jaxb-plugin.group>org.jvnet.jaxb</jaxb-plugin.group>
+    <jaxb-plugin.artifact>jaxb-maven-plugin</jaxb-plugin.artifact>
+    <jaxb-plugin.version>4.0.0</jaxb-plugin.version>
     <ph-jaxb-plugin.version>4.0.3</ph-jaxb-plugin.version>
   </properties>
 
@@ -134,7 +134,13 @@
         <configuration>
           <instructions>
             <Automatic-Module-Name>com.helger.fatturapa</Automatic-Module-Name>
-            <Export-Package>com.helger.fatturapa.*</Export-Package>
+            <Export-Package>
+              com.helger.fatturapa,
+              com.helger.fatturapa.builder,
+              com.helger.fatturapa.v120,
+              com.helger.fatturapa.v121,
+              com.helger.fatturapa.v122
+            </Export-Package>
             <Import-Package>!javax.annotation.*,*</Import-Package>
           </instructions>
         </configuration>
