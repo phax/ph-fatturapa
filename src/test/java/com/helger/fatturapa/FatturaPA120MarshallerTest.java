@@ -25,9 +25,9 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.helger.commons.io.file.FileSystemIterator;
-import com.helger.commons.mock.CommonsTestHelper;
 import com.helger.fatturapa.v120.FPA120FatturaElettronicaType;
+import com.helger.io.file.FileSystemIterator;
+import com.helger.unittest.support.TestHelper;
 
 /**
  * Test class for class {@link FatturaPA120Marshaller}.
@@ -53,7 +53,7 @@ public final class FatturaPA120MarshallerTest
         assertNotNull (b);
         // Read again
         final FPA120FatturaElettronicaType o2 = aMarshaller.read (b);
-        CommonsTestHelper.testEqualsImplementationWithEqualContentObject (o, o2);
+        TestHelper.testEqualsImplementationWithEqualContentObject (o, o2);
       }
   }
 

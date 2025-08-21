@@ -16,12 +16,11 @@
  */
 package com.helger.fatturapa;
 
-import javax.annotation.concurrent.NotThreadSafe;
-
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.io.resource.ClassPathResource;
+import com.helger.annotation.concurrent.NotThreadSafe;
+import com.helger.collection.commons.ICommonsList;
 import com.helger.fatturapa.v121.FPA121FatturaElettronicaType;
 import com.helger.fatturapa.v121.ObjectFactory;
+import com.helger.io.resource.ClassPathResource;
 import com.helger.jaxb.GenericJAXBMarshaller;
 
 /**

@@ -90,30 +90,41 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
-* v2.0.3 - work in progress
-    * Deprecated class `EFatturaPADocumentType`
-    * Switched JAXB Maven plugin to `org.jvnet.jaxb:jaxb-maven-plugin` 
-* v2.0.2 - 2023-04-07
-    * Added v1.2.2 to `EFatturaPADocumentType`
-    * Moved XML Schemas and test files to a folder `external/...`
-* v2.0.1 - 2023-03-22
-    * Added support for fatturaPA 1.2.2
-* v2.0.0 - 2023-01-08
-    * Using Java 11 as the baseline
-    * Updated to ph-commons 11
-    * Using JAXB 4.0 as the baseline
-* v1.2.0 - 2021-05-02
-    * Updated to ph-commons 10.1
-* v1.1.0 - 2021-03-21
-    * Updated to ph-commons 10
-* v1.0.3 - 2020-09-17
-    * Updated to Jakarta JAXB 2.3.3
-* v1.0.2 - 2020-08-28
-    * Using Java 8 date and time classes for JAXB created classes
-* v1.0.1 - 2020-06-30
-    * Minor API extension
-* v1.0.0 - 2020-06-17
-    * Initial version
+v3.0.0 - work in progress
+* Requires Java 17 as the minimum version
+* Updated to ph-commons 12.0.0
+* Removed all deprecated methods marked for removal
+* Switched JAXB Maven plugin to `org.jvnet.jaxb:jaxb-maven-plugin` 
+
+v2.0.2 - 2023-04-07
+* Added v1.2.2 to `EFatturaPADocumentType`
+* Moved XML Schemas and test files to a folder `external/...`
+
+v2.0.1 - 2023-03-22
+* Added support for fatturaPA 1.2.2
+
+v2.0.0 - 2023-01-08
+* Using Java 11 as the baseline
+* Updated to ph-commons 11
+* Using JAXB 4.0 as the baseline
+
+v1.2.0 - 2021-05-02
+* Updated to ph-commons 10.1
+
+v1.1.0 - 2021-03-21
+* Updated to ph-commons 10
+
+v1.0.3 - 2020-09-17
+* Updated to Jakarta JAXB 2.3.3
+
+v1.0.2 - 2020-08-28
+* Using Java 8 date and time classes for JAXB created classes
+
+v1.0.1 - 2020-06-30
+* Minor API extension
+
+v1.0.0 - 2020-06-17
+* Initial version
 
 ---
 
