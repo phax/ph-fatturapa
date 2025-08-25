@@ -263,7 +263,7 @@
         <configuration>
           <source>17</source>
           <sourcepath>
-            ${project.build.sourceDirectory}:${project.build.directory}/generated-sources/xjc
+            ${project.build.sourceDirectory}:${project.build.directory}/generated-sources/fatturapa120:${project.build.directory}/generated-sources/fatturapa121:${project.build.directory}/generated-sources/fatturapa122
           </sourcepath>
           <addSources>true</addSources>
         </configuration>
