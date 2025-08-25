@@ -57,7 +57,7 @@ By default a namespace context is present that uses the "p" prefix for the main 
 
 # Building from source
 
-To build from source you need Apache Maven and Java 1.8 or later.
+To build from source you need Apache Maven and Java 17 or later.
 Just run this on the commandline:
 
 ```shell
@@ -71,6 +71,7 @@ If you have build errors in your IDE, ensure that you once call `mvn process-sou
 Afterwards you might need to manually add the following folders to your buildpath:
 * `target/generated-sources/fatturapa120`
 * `target/generated-sources/fatturapa121`
+* `target/generated-sources/fatturapa122`
 
 # Maven usage
 
@@ -90,7 +91,7 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
-v3.0.0 - work in progress
+v3.0.0 - 2025-08-25
 * Requires Java 17 as the minimum version
 * Updated to ph-commons 12.0.0
 * Removed all deprecated methods marked for removal
