@@ -16,11 +16,11 @@
  */
 package com.helger.fatturapa;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.misc.Singleton;
 import com.helger.xml.namespace.MapBasedNamespaceContext;
 import com.helger.xsds.xmldsig.CXMLDSig;
-
-import jakarta.annotation.Nonnull;
 
 /**
  * The namespace context to be used as the namespace prefix mapper.
@@ -41,7 +41,7 @@ public class FatturaPA121NamespaceContext extends MapBasedNamespaceContext
     addMapping (CFatturaPA.DEFAULT_PREFIX_FPA, CFatturaPA.NAMESPACE_URI_FATTURA_PA_121);
   }
 
-  @Nonnull
+  @NonNull
   public static FatturaPA121NamespaceContext getInstance ()
   {
     return SingletonHolder.INSTANCE;

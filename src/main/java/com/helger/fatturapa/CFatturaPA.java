@@ -16,6 +16,8 @@
  */
 package com.helger.fatturapa;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.concurrent.Immutable;
 import com.helger.annotation.style.PresentForCodeCoverage;
 import com.helger.annotation.style.ReturnsMutableCopy;
@@ -23,8 +25,6 @@ import com.helger.collection.commons.CommonsArrayList;
 import com.helger.collection.commons.ICommonsList;
 import com.helger.io.resource.ClassPathResource;
 import com.helger.xsds.xmldsig.CXMLDSig;
-
-import jakarta.annotation.Nonnull;
 
 /**
  * Contains all the constants for FatturaPA handling.
@@ -39,7 +39,7 @@ public final class CFatturaPA
   public static final String NAMESPACE_URI_FATTURA_PA_121 = NAMESPACE_URI_FATTURA_PA_120;
   public static final String NAMESPACE_URI_FATTURA_PA_122 = NAMESPACE_URI_FATTURA_PA_120;
 
-  @Nonnull
+  @NonNull
   private static ClassLoader _getCL ()
   {
     return CFatturaPA.class.getClassLoader ();
@@ -49,7 +49,7 @@ public final class CFatturaPA
    * @return A list of all includes in the correct order. Never
    *         <code>null</code>.
    */
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public static ICommonsList <ClassPathResource> getAllXSDIncludes ()
   {
@@ -57,14 +57,14 @@ public final class CFatturaPA
   }
 
   // Note: requires XMLDsig
-  @Nonnull
+  @NonNull
   public static ClassPathResource getXSDFatturaPA120 ()
   {
     return new ClassPathResource ("/external/schemas/fatturapa/Schema_del_file_xml_FatturaPA_versione_1.2.xsd",
                                   _getCL ());
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public static ICommonsList <ClassPathResource> getAllXSDFatturaPA120 ()
   {
@@ -74,14 +74,14 @@ public final class CFatturaPA
   }
 
   // Note: requires XMLDsig
-  @Nonnull
+  @NonNull
   public static ClassPathResource getXSDFatturaPA121 ()
   {
     return new ClassPathResource ("/external/schemas/fatturapa/Schema_del_file_xml_FatturaPA_versione_1.2.1.xsd",
                                   _getCL ());
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public static ICommonsList <ClassPathResource> getAllXSDFatturaPA121 ()
   {
@@ -91,13 +91,13 @@ public final class CFatturaPA
   }
 
   // Note: requires XMLDsig
-  @Nonnull
+  @NonNull
   public static ClassPathResource getXSDFatturaPA122 ()
   {
     return new ClassPathResource ("/external/schemas/fatturapa/Schema_del_file_xml_FatturaPA_v1.2.2.xsd", _getCL ());
   }
 
-  @Nonnull
+  @NonNull
   @ReturnsMutableCopy
   public static ICommonsList <ClassPathResource> getAllXSDFatturaPA122 ()
   {
