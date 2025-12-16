@@ -22,7 +22,7 @@
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>3.0.2</version>
+    <version>3.0.3</version>
   </parent>
   <artifactId>ph-fatturapa</artifactId>
   <version>3.1.1-SNAPSHOT</version>
@@ -72,7 +72,7 @@
       <dependency>
         <groupId>com.helger.commons</groupId>
         <artifactId>ph-commons-parent-pom</artifactId>
-        <version>12.1.0</version>
+        <version>12.1.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
