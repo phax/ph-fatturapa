@@ -30,7 +30,6 @@
   <description>Library for reading and writing fatturaPA documents</description>
   <url>https://github.com/phax/ph-fatturapa</url>
   <inceptionYear>2020</inceptionYear>
-  
   <licenses>
     <license>
       <name>Apache 2</name>
@@ -38,19 +37,16 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-
   <scm>
     <connection>scm:git:https://github.com/phax/ph-fatturapa.git</connection>
     <developerConnection>scm:git:https://github.com/phax/ph-fatturapa.git</developerConnection>
     <url>https://github.com/phax/ph-fatturapa</url>
     <tag>HEAD</tag>
   </scm>
-
   <organization>
     <name>Philip Helger</name>
     <url>https://www.helger.com</url>
   </organization>
-
   <developers>
     <developer>
       <id>philip</id>
@@ -59,14 +55,12 @@
       <url>https://www.helger.com</url>
     </developer>
   </developers>
-
   <properties>
     <jaxb-plugin.group>org.jvnet.jaxb</jaxb-plugin.group>
     <jaxb-plugin.artifact>jaxb-maven-plugin</jaxb-plugin.artifact>
     <jaxb-plugin.version>4.0.12</jaxb-plugin.version>
     <ph-jaxb-plugin.version>5.1.2</ph-jaxb-plugin.version>
   </properties>
-
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -85,7 +79,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  
   <dependencies>
     <dependency>
       <groupId>com.helger.commons</groupId>
@@ -103,7 +96,6 @@
       <groupId>com.helger.xsd</groupId>
       <artifactId>ph-xsds-xmldsig</artifactId>
     </dependency>
-
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -125,27 +117,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <extensions>true</extensions>
-        <configuration>
-          <instructions>
-            <Automatic-Module-Name>com.helger.fatturapa</Automatic-Module-Name>
-            <Export-Package>
-              com.helger.fatturapa,
-              com.helger.fatturapa.builder,
-              com.helger.fatturapa.v120,
-              com.helger.fatturapa.v121,
-              com.helger.fatturapa.v122
-            </Export-Package>
-            <Import-Package>!org.jspecify.annotations.*,*</Import-Package>
-          </instructions>
-        </configuration>
-      </plugin>
       <plugin>
         <groupId>${jaxb-plugin.group}</groupId>
         <artifactId>${jaxb-plugin.artifact}</artifactId>
@@ -267,7 +240,7 @@
             ${project.build.sourceDirectory}:${project.build.directory}/generated-sources/fatturapa120:${project.build.directory}/generated-sources/fatturapa121:${project.build.directory}/generated-sources/fatturapa122
           </sourcepath>
         </configuration>
-      </plugin> 
+      </plugin>
     </plugins>
   </build>
 </project>
