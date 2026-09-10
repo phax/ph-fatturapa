@@ -46,8 +46,7 @@ public final class CFatturaPA
   }
 
   /**
-   * @return A list of all includes in the correct order. Never
-   *         <code>null</code>.
+   * @return A list of all includes in the correct order. Never <code>null</code>.
    */
   @NonNull
   @ReturnsMutableCopy
