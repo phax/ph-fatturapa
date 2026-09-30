@@ -170,6 +170,21 @@
               <generateDirectory>${project.build.directory}/generated-sources/fatturapa122</generateDirectory>
             </configuration>
           </execution>
+          <execution>
+            <id>123</id>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <schemaIncludes>
+                <schemaInclude>Schema_VFPA12_V1.2.3.xsd</schemaInclude>
+              </schemaIncludes>
+              <bindingIncludes>
+                <bindingInclude>bindings123.xjb</bindingInclude>
+              </bindingIncludes>
+              <generateDirectory>${project.build.directory}/generated-sources/fatturapa123</generateDirectory>
+            </configuration>
+          </execution>
         </executions>
         <configuration>
           <bindingDirectory>${basedir}/src/main/jaxb</bindingDirectory>
@@ -226,6 +241,7 @@
                 <delete dir="${basedir}/target/generated-sources/fatturapa120/com/helger/xsds/" />
                 <delete dir="${basedir}/target/generated-sources/fatturapa121/com/helger/xsds/" />
                 <delete dir="${basedir}/target/generated-sources/fatturapa122/com/helger/xsds/" />
+                <delete dir="${basedir}/target/generated-sources/fatturapa123/com/helger/xsds/" />
               </target>
             </configuration>
           </execution>
@@ -237,7 +253,7 @@
         <configuration>
           <source>17</source>
           <sourcepath>
-            ${project.build.sourceDirectory}:${project.build.directory}/generated-sources/fatturapa120:${project.build.directory}/generated-sources/fatturapa121:${project.build.directory}/generated-sources/fatturapa122
+            ${project.build.sourceDirectory}:${project.build.directory}/generated-sources/fatturapa120:${project.build.directory}/generated-sources/fatturapa121:${project.build.directory}/generated-sources/fatturapa122:${project.build.directory}/generated-sources/fatturapa123
           </sourcepath>
         </configuration>
       </plugin>
