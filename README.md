@@ -96,7 +96,7 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
-v3.1.1 - work in progress
+v3.1.1 - 2026-09-30
 * Removed OSGI bundling
 * Added support for fatturaPA 1.2.3 (valid from 2025-04-01) via the new class `FatturaPA123Marshaller`; the generated types are prefixed with "FPA123".
   The XML Schema is `Schema_VFPA12_V1.2.3.xsd` - the separately published `Schema_VFPR12_v1.2.3.xsd` for the "Fattura Ordinaria" is byte-identical.
