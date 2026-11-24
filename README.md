@@ -98,7 +98,7 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 
 # News and noteworthy
 
-v3.1.2 - work in progress
+v3.1.2 - 2026-11-24
 * Added support for fatturaPA 1.2.4 (valid from 2027-01-11) via the new class `FatturaPA124Marshaller`; the generated types are prefixed with "FPA124".
   The XML Schema is `Schema_VFPA12_v1.2.4.xsd` - the separately published `Schema_VFPR12_v1.2.4.xsd` for the "Fattura Ordinaria" is byte-identical.
   Compared to 1.2.3 it adds the tax regime `RF21`; all other changes are documentation only.
