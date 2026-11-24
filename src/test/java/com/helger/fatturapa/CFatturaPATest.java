@@ -56,6 +56,11 @@ public final class CFatturaPATest
     assertTrue (CFatturaPA.getXSDFatturaPA123 ().exists ());
     assertEquals (CFatturaPA.getXSDFatturaPA123 (), CFatturaPA.getXSDFatturaPA123 ());
     assertNotSame (CFatturaPA.getXSDFatturaPA123 (), CFatturaPA.getXSDFatturaPA123 ());
+
+    assertNotNull (CFatturaPA.getXSDFatturaPA124 ());
+    assertTrue (CFatturaPA.getXSDFatturaPA124 ().exists ());
+    assertEquals (CFatturaPA.getXSDFatturaPA124 (), CFatturaPA.getXSDFatturaPA124 ());
+    assertNotSame (CFatturaPA.getXSDFatturaPA124 (), CFatturaPA.getXSDFatturaPA124 ());
   }
 
   @Test

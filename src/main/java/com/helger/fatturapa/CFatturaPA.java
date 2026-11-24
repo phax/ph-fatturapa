@@ -39,6 +39,7 @@ public final class CFatturaPA
   public static final String NAMESPACE_URI_FATTURA_PA_121 = NAMESPACE_URI_FATTURA_PA_120;
   public static final String NAMESPACE_URI_FATTURA_PA_122 = NAMESPACE_URI_FATTURA_PA_120;
   public static final String NAMESPACE_URI_FATTURA_PA_123 = NAMESPACE_URI_FATTURA_PA_120;
+  public static final String NAMESPACE_URI_FATTURA_PA_124 = NAMESPACE_URI_FATTURA_PA_120;
 
   @NonNull
   private static ClassLoader _getCL ()
@@ -119,6 +120,22 @@ public final class CFatturaPA
   {
     final ICommonsList <ClassPathResource> ret = getAllXSDIncludes ();
     ret.add (getXSDFatturaPA123 ());
+    return ret;
+  }
+
+  // Note: requires XMLDsig
+  @NonNull
+  public static ClassPathResource getXSDFatturaPA124 ()
+  {
+    return new ClassPathResource ("/external/schemas/fatturapa/Schema_VFPA12_v1.2.4.xsd", _getCL ());
+  }
+
+  @NonNull
+  @ReturnsMutableCopy
+  public static ICommonsList <ClassPathResource> getAllXSDFatturaPA124 ()
+  {
+    final ICommonsList <ClassPathResource> ret = getAllXSDIncludes ();
+    ret.add (getXSDFatturaPA124 ());
     return ret;
   }
 

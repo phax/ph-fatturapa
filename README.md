@@ -14,6 +14,7 @@ Supported versions are:
 * v1.2.1 (valid from 2020-10-01 to 2022-09-30)
 * v1.2.2 (valid from 2022-10-01 to 2025-03-31)
 * v1.2.3 (valid from 2025-04-01)
+* v1.2.4 (valid from 2027-01-11)
 
 It is licensed under Apache 2.0 license.
 
@@ -77,6 +78,7 @@ Afterwards you might need to manually add the following folders to your buildpat
 * `target/generated-sources/fatturapa121`
 * `target/generated-sources/fatturapa122`
 * `target/generated-sources/fatturapa123`
+* `target/generated-sources/fatturapa124`
 
 # Maven usage
 
@@ -95,6 +97,12 @@ Add the following to your pom.xml to use this artifact, replacing `x.y.z` with t
 * [Official fatturaPA format page](https://www.fatturapa.gov.it/it/norme-e-regole/documentazione-fattura-elettronica/formato-fatturapa/) - check the Italian version of the page; the English version is out of date
 
 # News and noteworthy
+
+v3.1.2 - work in progress
+* Added support for fatturaPA 1.2.4 (valid from 2027-01-11) via the new class `FatturaPA124Marshaller`; the generated types are prefixed with "FPA124".
+  The XML Schema is `Schema_VFPA12_v1.2.4.xsd` - the separately published `Schema_VFPR12_v1.2.4.xsd` for the "Fattura Ordinaria" is byte-identical.
+  Compared to 1.2.3 it adds the tax regime `RF21`; all other changes are documentation only.
+  See [phive-rules-foundations issue #4](https://github.com/phax/phive-rules-foundations/issues/4)
 
 v3.1.1 - 2026-09-30
 * Removed OSGI bundling
